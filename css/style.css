@@ -5,3 +5,8 @@
 ul {
   list-style: none;
 }
+
+.remove {
+  cursor: pointer;
+  margin-left: 10px;
+}
