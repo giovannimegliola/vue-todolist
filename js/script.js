@@ -7,7 +7,7 @@ createApp({
         { text: 'Completa il milestone 1', done: true, id: 1 },
         { text: 'Completa il milestone 2', done: true, id: 2 },
         { text: 'Completa il milestone 3', done: true, id: 3 },
-        { text: 'Procedi con bonus 1', done: false, id: 4 },
+        { text: 'Procedi con bonus 1', done: true, id: 4 },
         { text: 'Continua con bonus 2', done: false, id: 5 },
         { text: 'Trasforma questa lista scarna in una todo list più articolata', done: false, id: 5 }
       ],
