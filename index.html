@@ -12,6 +12,7 @@
 
   <div id="app" class="text-center">
     <h1>To-Do List</h1>
+    
     <ul>
       <li v-for="todo in tasks" :key="todo.id">
         <span :class="{ 'marked': todo.done }">
@@ -19,6 +20,9 @@
         <span @click="removeTask(todo.id)" class="remove">x</span>
       </li>
     </ul>
+
+    <input v-model="newActivity" @keyup.enter="addTask" placeholder="Inserisci nuovo task">
+    <button @click="addTask" class="btn btn-info mx-1">Aggiungi</button> 
   </div>
 
 
