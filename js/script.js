@@ -8,7 +8,7 @@ createApp({
         { text: 'Completa il milestone 2', done: true, id: 2 },
         { text: 'Completa il milestone 3', done: true, id: 3 },
         { text: 'Procedi con bonus 1', done: true, id: 4 },
-        { text: 'Continua con bonus 2', done: false, id: 5 },
+        { text: 'Continua con bonus 2', done: true, id: 5 },
         { text: 'Trasforma questa lista scarna in una todo list più articolata', done: false, id: 5 }
       ],
       newActivity: ''
@@ -32,6 +32,10 @@ createApp({
       if (index >= 0) {
         this.tasks.splice(index, 1);
       }
+    },
+    
+    invertVal(todo) {
+      todo.done = !todo.done;
     }
   }
 }).mount('#app');

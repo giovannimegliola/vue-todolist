@@ -15,7 +15,7 @@
 
     <ul>
       <li v-for="todo in tasks" :key="todo.id">
-        <span :class="{ 'marked': todo.done }">
+        <span @click="invertVal(todo)" :class="{ 'marked': todo.done }">
         {{ todo.text }}</span>
         <span @click="removeTask(todo.id)" class="remove">x</span>
       </li>
